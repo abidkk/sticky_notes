@@ -45,10 +45,3 @@ let delHandler = (id) => {
     location.reload();
   }, 1000);
 };
-
-
-// // edit candidate
-// let editHandler = (id) => {
-//     gettitle.value = todos[id].name;
-//     getdescription.value = todos[id].description;
-//   };
