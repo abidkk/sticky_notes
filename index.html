@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Notes</title>
+</head>
+
+<body class="p-2 md:px-10 bg-gray-200">
+    <h1 class="text-center text-2xl font-bold bg-gray-100 p-2">Sticky Notes</h1>
+
+    <section class=" py-5 flex justify-center items-center ">
+        <form onsubmit="submitHandler(); return false">
+
+            <input type="text" placeholder="title" id="title"
+                class="px-2 py-1 rounded-md bg-white border border-gray-300  w-full">
+            <input type="text" placeholder="description" id="description"
+                class="px-2 py-1 rounded-md bg-white  border border-gray-300 w-full">
+
+            <input type="date" placeholder="contact" id="contact"
+                class="px-2 py-1 rounded-md bg-white border border-gray-300">
+
+            <button type="submit"
+                class="text-white bg-blue-700 px-2 py-1 rounded-md hover:bg-blue-500 duration-500">Save</button>
+        </form>
+    </section>
+
+    <section class="">
+        <h1 class="text-center text-2xl font-bold p-2 bg-gray-100">Manage Notes</h1>
+    
+        <div id="list" class="flex flex-wrap gap-2 justify-center py-2">
+        </div>
+    </section>
+
+    <!-- <button onclick="delHandler(index)"></button> -->
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
